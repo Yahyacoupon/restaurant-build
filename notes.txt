@@ -1,0 +1,39 @@
+//1 --- install package.json file
+
+npm init -y --init 
+
+//2 --- Then install webpack // bringing in moudules
+
+//3 --- Creating index.js(main entry file), and then other serving js files
+
+ie src ---
+       index.js
+       greeting.js
+       creatives.js
+
+4 // --- Creating webpack.config js file
+Adding input and output paths for the js files
+ie entry: "./src/index.js
+   output: "main.js"
+
+5 // --- Exporting html to the dist
+
+Using the htmlpack Plugin
+-  Install it using command
+-  Then adding configurations to webpack config file
+
+
+i.e 
+devtool: "eval-source-map"
+devServers: {
+  new Plugin : ["./src/template.html"]
+}
+
+//At this point, you can run npx webpack devServers
+
+Extrast can be added when needed
+
+ie 
+Loading fonts
+Loading Images
+Loading CSS
